@@ -1,0 +1,154 @@
+
+/*搜索栏*/
+.searchBar{
+  width: 1.60rem;
+  height: .30rem;
+  input{
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: .12rem;
+  }
+}
+
+/*下拉选择框*/
+.landList{
+  color: #fff;
+  font-size: .12rem;
+  li{
+    background-color: #242424;
+    padding: .10rem;
+  }
+  li:hover{
+    background-color: #000;
+  }
+}
+
+/*Carousel*/
+@keyframes myfirst
+{
+  30% {opacity: 1;}
+  60% {opacity: 0.5;}
+  100% {opacity: 0;visibility: hidden}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+  30% {opacity: 1;}
+  60% {opacity: 0.5;}
+  100% {opacity: 0;visibility: hidden}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+  30% {opacity: 1;}
+  60% {opacity: 0.5;}
+  100% {opacity: 0;visibility: hidden}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+  30% {opacity: 1;}
+  60% {opacity: 0.5;}
+  100% {opacity: 0;  visibility: hidden}
+}
+
+.imgAnimate{
+  animation: myfirst 3s;
+  -moz-animation: myfirst 3s;	/* Firefox */
+  -webkit-animation: myfirst 3s;	/* Safari 和 Chrome */
+  -o-animation: myfirst 3s;	/* Opera */
+}
+
+.swipe{
+  position: relative;
+  .container{
+    left:-1.26rem;
+    .points{
+      position: absolute;
+      bottom: .10rem;
+      left: 50%;
+      transform:translateX(-50%);
+      span{
+        display: inline-block;
+        width: .08rem;
+        height: .08rem;
+        border: .01rem solid #ccc;
+        border-radius: 50%;
+        margin-left: .10rem;
+        background: #dddddd;
+      }
+      .bgcSpan{
+        background-color: #C20C0C;
+      }
+    }
+  }
+  .leftArrow{
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .rightArrow{
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/*titleBar*/
+.titleBar{
+  border-bottom: .02rem solid #C10D0C;
+  padding-left: .25rem;
+  a{
+    color:#000;
+    display: inline-block;
+    padding: 0 .10rem 0.05rem;
+    border-right: .02rem solid #ccc;
+    font-size: .12rem;
+  }
+  & a:nth-child(1){
+    font-size: .20rem;
+    border-right: .0rem solid #ccc;
+  }
+  & a:last-child{
+    float: right;
+    border-right: .0rem solid #ccc;
+  }
+}
+
+/*SongList*/
+.songListCommon{
+  .songListTop{
+    .songListCon{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      li{
+        padding-top: .20rem;
+        img{
+          background: url("https://s2.music.126.net/style/web2/img/coverall.png?0c35bc8223f248b582261e68fee95aec") center no-repeat;
+          width: 1.40rem;
+          height: 1.40rem;
+        }
+        a{
+          display: block;
+          width: 1.40rem;
+          white-space: pre-line;
+          color: #000;
+        }
+      }
+    }
+  }
+  .songListBottom{
+
+  }
+}
+
+
+

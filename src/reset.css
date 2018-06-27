@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+html{
+    font-size: 100px;
+}
+
+body{
+    font-size: .14rem;
+    font-family: sans-serif;
+    /*color: #ffffff;*/
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:link {
+    color: #fff
+}
+
+img{
+    vertical-align: middle;
+}
+
+
+
