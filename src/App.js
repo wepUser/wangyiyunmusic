@@ -12,12 +12,17 @@ import Friend from './pages/onePage/Friend';
 
 
 
+
 class App extends Component {
     constructor(props) {
         super();
         this.state = {
             display: 'none'
         }
+    }
+
+    componentDidMount(){
+
     }
 
     /*鼠标移入登陆事件*/
